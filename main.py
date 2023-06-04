@@ -1,6 +1,7 @@
 from __future__ import print_function
 from flask import Flask, render_template, request
 from youtube_dl import youtube_downloader
+from waitress import serve
 
 app = Flask(__name__)
 save_path = ''
@@ -20,4 +21,4 @@ def index():
     
 
 if __name__ == "__main__": 
-    app.run(host="localhost", port=5000)
+    serve(app, host='0.0.0.0', port=5000)
