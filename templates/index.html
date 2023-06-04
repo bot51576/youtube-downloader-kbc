@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <title>YouTube Downloader for KBC</title>
+  </head>
+  <body>
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <img
+          src="./static/img/YouTube_full-color_icon_(2017).svg.png"
+          alt="Bulma: a modern CSS framework based on Flexbox"
+          width="80"
+          height="50"
+        />
+        <h1 class="is-size-2 ml-3">YouTube Downloader For KBC</h1>
+      </div>
+    </nav>
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <p class="is-size-4">url</p>
+      <input type="text" name="url" />
+      <p class="is-size-4">path</p>
+      <input type="text" name="path" value="{{ p }}" />
+      <input type="submit" value="Donwload" />
+    </form>
+  </body>
+</html>
